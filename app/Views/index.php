@@ -25,7 +25,7 @@
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo">
-                        <a href="<?= base_url ();?>public/tes ">
+                        <a href="<?= base_url ();?>public/index ">
                         <img src="<?= base_url('public/img/logobbppks.jpeg'); ?>" alt="Logo" style="height: auto; margin-left: 50px;" width="120" srcset=""></a>
                         </div>
                         <div class="toggler">
@@ -38,7 +38,7 @@
                         <li class="sidebar-title">Menu</li>
 
                         <li class="sidebar-item active ">
-                            <a href="<?= base_url ();?>public/tes" class='sidebar-link'>
+                            <a href="<?= base_url ();?>public/index" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>

@@ -25,7 +25,7 @@
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                     <div class="logo">
-                        <a href="<?= base_url ();?>public/tes ">
+                        <a href="<?= base_url ();?>public/index ">
                         <img src="<?= base_url('public/img/logobbppks.jpeg'); ?>" alt="Logo" style="height: auto; margin-left: 50px;" width="120" srcset=""></a>
 
                         </div>
@@ -39,7 +39,7 @@
                         <li class="sidebar-title">Menu</li>
 
                         <li class="sidebar-item  ">
-                        <a href="<?= base_url ();?>public/tes" class="sidebar-link">
+                        <a href="<?= base_url ();?>public/index" class="sidebar-link">
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
@@ -236,26 +236,30 @@
             </header>
 
             <div class="page-heading">
-                <div class="page-title">
-                    <div class="row">
-                        <div class="col-12 col-md-6 order-md-1 order-last">
-                            <h3>DataTable</h3>
-                            <p class="text-subtitle text-muted">For user to check they list</p>
-                        </div>
-                        <div class="col-12 col-md-6 order-md-2 order-first">
-                            <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">DataTable</li>
-                                </ol>
-                            </nav>
-                        </div>
+    <div class="page-title">
+        <div class="row">
+            <div class="col-12 col-md-6 order-md-1 order-last">
+                <h3>Data Surat</h3>
+            </div>
+            <div class="col-12 col-md-6 order-md-2 order-first d-flex justify-content-md-end justify-content-start">
+                <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="<?= base_url ();?>public/index">Dashboard</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Surat</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+            <div class="col-md-6">
+            <input type="text" name ="keyword" size ="30" autofocus 
+             placeholder="Search..." autocomplete="off">
+            <button type="submit" name="cari">Search</button>
                     </div>
                 </div>
+            </div>
                 <section class="section">
                     <div class="card">
                         <div class="card-header">
-                            Simple Datatable
                         </div>
                         <div class="card-body">
                             <table class="table table-striped" id="table1">
@@ -370,7 +374,7 @@
                                     </tr>
                                     <tr>
                                         <td>Aladdin</td>
-                                        <td>sem.ut@pellentesqueafacilisis.ca</td>
+                                        <td>sem.ut@pellenindexqueafacilisis.ca</td>
                                         <td>0800 1111</td>
                                         <td>Bothey</td>
                                         <td>
