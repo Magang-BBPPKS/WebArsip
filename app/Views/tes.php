@@ -49,7 +49,7 @@
                                 <span>Surat</span>
                             </a>
                         </li>
-                        <li class="sidebar-item active ">
+                        <li class="sidebar-item  ">
                         <a href="<?= base_url();?>public/honor" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                                 <span>Pegawai Honor</span>
@@ -245,13 +245,11 @@
                                         <div class="row">
                                             <div class="col-md-4">
                                                 <div class="stats-icon purple">
-                                                    <i class="iconly-boldShow"></i>
-                                                    <i class="fa-regular fa-envelope"></i>
+                                                <i class="fa-regular fa-envelope"></i>
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
-                                                <h6 class="text-muted font-semibold" >Surat</h6>
-                                                
+                                                <h6 class="text-muted font-semibold">Surat masuk</h6>
                                                 <h6 class="font-extrabold mb-0">112.000</h6>
                                             </div>
                                         </div>
@@ -265,10 +263,11 @@
                                             <div class="col-md-4">
                                                 <div class="stats-icon blue">
                                                     <i class="iconly-boldProfile"></i>
+                                                <i class="fa-solid fa-user-tie"></i>
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
-                                                <h6 class="text-muted font-semibold">Followers</h6>
+                                                <h6 class="text-muted font-semibold">Pegawai Honor</h6>
                                                 <h6 class="font-extrabold mb-0">183.000</h6>
                                             </div>
                                         </div>
