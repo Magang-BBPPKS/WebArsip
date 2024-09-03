@@ -2,10 +2,10 @@
 
 namespace App\Controllers;
 
-class Tes extends BaseController
+class honor extends BaseController
 {
     public function index()
     {
-        return view('tes');
+        return view('v_honor');
     }
 }
