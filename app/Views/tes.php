@@ -9,13 +9,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('public/css/app.css'); ?>">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="<?= base_url('public/css/bootstrap.css'); ?>">
 
     <link rel="stylesheet" href="assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="assets/vendors/bootstrap-icons/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/app.css">
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo">
-                            <a href="index.html"><img src="<?= base_url('public/img/logobbppks500.jpg'); ?>" alt="Logo" width="auto" height="auto" srcset=""></a>
+                            <a href="tes.php"><img src="<?= base_url('public/img/logobbppks.jpeg'); ?>" alt="Logo" style="height: auto; margin-left: 50px;"  width="120" srcset="" ></a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -387,7 +388,7 @@
             </header>
 
             <div class="page-heading">
-                <h3>Profile Statistics</h3>
+                <h3>Data BBPPKS Kementrian Sosial Republik Indonesia</h3>
             </div>
             <div class="page-content">
                 <section class="row">
@@ -400,10 +401,11 @@
                                             <div class="col-md-4">
                                                 <div class="stats-icon purple">
                                                     <i class="iconly-boldShow"></i>
+                                                    <i class="fa-regular fa-envelope"></i>
                                                 </div>
                                             </div>
                                             <div class="col-md-8">
-                                                <h6 class="text-muted font-semibold">Profile Views</h6>
+                                                <h6 class="text-muted font-semibold" >Surat</h6>
                                                 <h6 class="font-extrabold mb-0">112.000</h6>
                                             </div>
                                         </div>
