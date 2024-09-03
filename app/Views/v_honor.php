@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="<?= base_url('public/asset/cssperfect-scrollbar.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('public/asset/cssbootstrap-icons.css'); ?>">
     <link rel="stylesheet" href="<?= base_url('public/asset/css/bootstrap.css'); ?>">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
     
 </head>
@@ -38,13 +39,13 @@
                     <ul class="menu">
                         <li class="sidebar-title">Menu</li>
                         <li class="sidebar-item  ">
-                        <a href="<?= base_url ();?>public/tes" class="sidebar-link">
+                        <a href="<?= base_url ();?>public/asset/tes" class="sidebar-link">
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
                         </li>
                         <li class="sidebar-item  ">
-                        <a href="<?= base_url();?>public/surat" class='sidebar-link'>
+                        <a href="<?= base_url();?>public/asset/surat" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                                 <span>Surat</span>
                             </a>
@@ -521,6 +522,7 @@
             </footer>
         </div>
     </div>
+
     <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
 
@@ -532,6 +534,69 @@
     </script>
 
     <script src="assets/js/main.js"></script>
-</body>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+</body>
+<script>
+    var tabel = null;
+
+    $(document).ready(function () {
+        tabel = $('#table-datatable').DataTable({
+            "processing": true,
+            "responsive": true,
+            "serverSide": true,
+            "ordering": true, // Set true agar bisa di sorting
+            "order": [
+                [0, 'asc']
+            ], // Default sortingnya berdasarkan kolom / field ke 0 (paling pertama)
+            "ajax": {
+                "url": "<?= base_url('public/honor/grid'); ?>", // URL file untuk proses select datanya
+                "type": "POST",
+
+            },
+            "deferRender": true,
+            "aLengthMenu": [
+                [15, 25, 50],
+                [15, 25, 50]
+            ], // Combobox Limit
+            "columns": [{
+                "data": 'nisn',
+                "sortable": false,
+                render: function (data, type, row, meta) {
+                    return meta.row + meta.settings._iDisplayStart + 1;
+                }
+            },
+            {
+                "data": "nisn"
+            },
+            {
+                "data": "nama",
+                // "render": function(data, type, row, meta) {
+                //     return '[hidden]';
+                // }
+            },
+            {
+                "data": "kelas",
+                // "render": function(data, type, row, meta) {
+                //     return data + " " + row.role;
+                // }
+            },
+            {
+                "data": "alamat"
+            },
+            {
+                "data": "nisn",
+                "render": function (data, type, row, meta) {
+                    var editButton = "<button class='btn btn-primary' data-username='" + data + "' data-nama='" + row.nama + "' data-password='" + row.password + "' data-role='" + row.role + "' onclick='prosesEdit(this)'>EDIT</button>";
+                    var deleteButton = "<button class='btn btn-danger' onclick='prosesDelete(\"" + data + "\")'>DELETE</button>";
+                    return editButton + " " + deleteButton;
+                }
+            },
+            ],
+        });
+    });
+</script>
 </html>

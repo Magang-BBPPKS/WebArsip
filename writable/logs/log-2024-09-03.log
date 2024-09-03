@@ -68,3 +68,15 @@ in SYSTEMPATH\CodeIgniter.php on line 903.
  3 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
  4 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
  5 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-09-03 03:56:40 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "v_testabel.php"
+[Method: GET, Route: testabel]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('v_testabel.php')
+ 2 SYSTEMPATH\Common.php(1169): CodeIgniter\View\View->render('v_testabel', [], true)
+ 3 APPPATH\Controllers\testabel.php(12): view('v_testabel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\testabel->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\testabel))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
