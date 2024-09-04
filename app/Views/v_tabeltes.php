@@ -41,11 +41,20 @@
         <thead>
             <tr>
                 <th> No. </th>
-                <th> Nisn </th>
                 <th> Nama </th>
-                <th> Kelas </th>
-                <th> Alamat </th>
-                <th> Aksi </th>
+                <th> NIP </th>
+                <th> Tempat/Tgl Lahir </th>
+                <th> Jenis Kelamin </th>
+                <th> Status Kepegawaian </th>
+                <th> Gol/TMT CPNS </th>
+                <th> Gol/TMT</th>
+                <th> Agama</th>
+                <th> Pendidikan</th>
+                <th> Jabatan</th>
+                <th> TMT</th>
+                <th> Eselon</th>
+                <th> Diklat/Jabatan</th>
+                <th> Aksi</th>
             </tr>
         </thead>
         <tbody></tbody>
@@ -74,32 +83,59 @@
                 [15, 25, 50]
             ], // Combobox Limit
             "columns": [{
-                "data": 'username',
+                "data": 'nip',
                 "sortable": false,
                 render: function (data, type, row, meta) {
                     return meta.row + meta.settings._iDisplayStart + 1;
                 }
             },
             {
-                "data": "username"
+                "data": "nama"
             },
             {
-                "data": "nama",
+                "data": "nip",
                 // "render": function(data, type, row, meta) {
                 //     return '[hidden]';
                 // }
             },
             {
-                "data": "password",
+                "data": "tempat/tgllahir",
                 // "render": function(data, type, row, meta) {
                 //     return data + " " + row.role;
                 // }
             },
             {
+                "data": "jnsklmn"
+            },
+            {
+                "data": "statuskpg"
+            },
+            {
+                "data": "gol/tmtcpns"
+            },
+            {
+                "data": "goltmt"
+            },
+            {
+                "data": "agama"
+            },
+            {
+                "data": "pendidikan"
+            },
+            {
                 "data": "jabatan"
             },
             {
-                "data": "username",
+                "data": "tmt"
+            },
+            {
+                "data": "eselon"
+            },
+            {
+                "data": "diklat/jabatan"
+            },
+            {
+                "data": "nip",
                 "render": function (data, type, row, meta) {
                     var editButton = "<button class='btn btn-primary' data-username='" + data + "' data-nama='" + row.nama + "' data-password='" + row.password + "' data-role='" + row.jabatan + "' onclick='prosesEdit(this)'>EDIT</button>";
                     var deleteButton = "<button class='btn btn-danger' onclick='prosesDelete(\"" + data + "\")'>DELETE</button>";

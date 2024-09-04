@@ -6,14 +6,25 @@ use CodeIgniter\Model;
 
 class tes_model extends Model
 {
-    protected $table = "user";
-    protected $primaryKey = "username";
+    protected $table = "pegawai_bbppks";
+    protected $primaryKey = "nip";
     protected $returnType = "object";
     protected $allowedFields = [
-        "username",
-        "password",
         "nama",
-        "jabatan"
+        "nip",
+        "tempat/tgllahir",
+        "jnsklmn",
+        "statuskpg",
+        "gol/tmtcpns",
+        "gol/tmt",
+        "agama",
+        "pendidikan",
+        "jabatan",
+        "tmt",
+        "eselon",
+        "diklat/jabatan",
+
+
     ];
 }
 
