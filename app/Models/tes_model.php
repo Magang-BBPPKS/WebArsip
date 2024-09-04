@@ -12,17 +12,17 @@ class tes_model extends Model
     protected $allowedFields = [
         "nama",
         "nip",
-        "tempat/tgllahir",
+        "tempat_tgllahir",
         "jnsklmn",
         "statuskpg",
-        "gol/tmtcpns",
-        "gol/tmt",
+        "gol_tmtcpns",
+        "gol_tmt",
         "agama",
         "pendidikan",
         "jabatan",
         "tmt",
         "eselon",
-        "diklat/jabatan",
+        "diklat_jabatan"
 
 
     ];

@@ -25,7 +25,7 @@ class testabel extends BaseController
 
         $isWhere = null;
 
-        $search = array('nama', 'nip', 'tempat/tgllahir', 'jnsklmn', 'statuskpg', 'gol/tmtcpns', 'gol/tmt', 'agama', 'pendidikan', 'jabatan', 'tmt', 'eselon', 'diklat/jabatan');
+        $search = array('nama', 'nip', 'tempat_tgllahir', 'jnsklmn', 'statuskpg', 'gol_tmtcpns', 'gol_tmt', 'agama', 'pendidikan', 'jabatan', 'tmt', 'eselon', 'diklat_jabatan');
         echo $this->DataTables->BuildDatatables($query, $where, $isWhere, $search);
     }
 }

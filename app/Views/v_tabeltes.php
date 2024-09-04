@@ -99,7 +99,7 @@
                 // }
             },
             {
-                "data": "tempat/tgllahir",
+                "data": "tempat_tgllahir",
                 // "render": function(data, type, row, meta) {
                 //     return data + " " + row.role;
                 // }
@@ -111,10 +111,10 @@
                 "data": "statuskpg"
             },
             {
-                "data": "gol/tmtcpns"
+                "data": "gol_tmtcpns"
             },
             {
-                "data": "goltmt"
+                "data": "gol_tmt"
             },
             {
                 "data": "agama"
@@ -132,7 +132,7 @@
                 "data": "eselon"
             },
             {
-                "data": "diklat/jabatan"
+                "data": "diklat_jabatan"
             },
             {
                 "data": "nip",
