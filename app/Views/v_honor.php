@@ -45,7 +45,7 @@
                             </a>
                         </li>
                         <li class="sidebar-item  ">
-                        <a href="<?= base_url();?>public/asset/surat" class='sidebar-link'>
+                        <a href="<?= base_url();?>public/surat" class='sidebar-link'>
                                 <i class="bi bi-file-earmark-spreadsheet-fill"></i>
                                 <span>Surat</span>
                             </a>

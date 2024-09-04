@@ -56,22 +56,17 @@
                             </a>
                         </li>
 
-                        <li class="sidebar-title">Extra UI</li>
-
                         <li class="sidebar-item  has-sub">
                             <a href="#" class='sidebar-link'>
                                 <i class="bi bi-pentagon-fill"></i>
-                                <span>Widgets</span>
+                                <span>Pegawai</span>
                             </a>
                             <ul class="submenu ">
                                 <li class="submenu-item ">
-                                    <a href="ui-widgets-chatbox.html">Chatbox</a>
+                                    <a href="<?= base_url();?>public/honor">Pegawai Honorer</a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="ui-widgets-pricing.html">Pricing</a>
-                                </li>
-                                <li class="submenu-item ">
-                                    <a href="ui-widgets-todolist.html">To-do List</a>
+                                    <a href="ui-widgets-pricing.html">Pegawai Tetap</a>
                                 </li>
                             </ul>
                         </li>
@@ -513,13 +508,13 @@
             </footer>
         </div>
     </div>
-    <script src="assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="<?= base_url('public/asset/vendors/perfect-scrollbar/perfect-scrollbar.min.js')?>"></script>
+    <script src="<?= base_url('public/asset/js/bootstrap.bundle.min.js')?>"></script>
 
-    <script src="assets/vendors/apexcharts/apexcharts.js"></script>
-    <script src="assets/js/pages/dashboard.js"></script>
+    <script src="<?= base_url('public/asset/vendors/apexcharts/apexcharts.js')?>"></script>
+    <script src="<?= base_url('public/asset/js/pages/dashboard.js')?>"></script>
 
-    <script src="assets/js/main.js"></script>
+    <script src="<?= base_url('public/asset/js/main.js')?>"></script>
 </body>
 
 </html>
